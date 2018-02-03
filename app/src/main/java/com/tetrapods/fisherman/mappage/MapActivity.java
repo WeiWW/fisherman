@@ -46,6 +46,7 @@ public class MapActivity extends DaggerAppCompatActivity
     @Inject
     LawFragment mLawFragment;
 
+
     @Inject
     RecordFragment mRecordFragment;
 
