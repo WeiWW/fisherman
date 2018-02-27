@@ -1,6 +1,20 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'jacoco-android'
+apply plugin: 'checkstyle'
 
+tasks.withType(Checkstyle) {
+    ignoreFailures = true
+    reports {
+        html.enabled = true
+    }
+}
+
+jacocoAndroidUnitTestReport {
+    csv.enabled false
+    html.enabled true
+    xml.enabled false
+}
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
