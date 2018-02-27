@@ -15,7 +15,18 @@
   -->
 
 <resources>
-    <string name="app_name">FISHERMAN</string>
+    <string name="app_name">討海人</string>
+    <string name="layer">Layer</string>
+    <string name="my_route">我的軌跡</string>
+    <string name="economy_sea">經濟海域</string>
+    <string name="marine_sanctuary">海洋保護區</string>
+    <string name="port">港口資訊</string>
+    <string name="fish_distribution">漁獲分佈</string>
+    <string name="check_rule">看法規</string>
+    <string name="back_to_map">回到地圖</string>
+    <string name="you_are_in_sanctuary">您已進入%s，此區禁止底拖網</string>
+    <string name="current_location">目前位置：%f%s %f%s</string>
+    <string name="fish_catch_info">開始時間：%s\n結束時間：%s\n總時數：%s 小時\n漁獲量：%.2f kg\n漁獲率：%.2f kg/hr</string>
     <string name="add_task">New TO-DO</string>
     <string name="edit_task">Edit TO-DO</string>
     <string name="task_marked_complete">Task marked complete</string>
@@ -66,5 +77,20 @@
     <string name="setting">設定</string>
     <string name="about">關於</string>
     <string name="search_location">搜尋地點</string>
+    <string name="start_time">起始時間</string>
+    <string name="working_location">作業地點</string>
+    <string name="catch_fish">漁獲量</string>
+    <string name="takes_time">總作業時間</string>
+    <string name="location">%f%s %f%s</string>
+    
+    <string-array name="fishCatch">
+        <item>t</item>
+        <item>kg</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>min</item>
+        <item>hr</item>
+    </string-array>
 
 </resources>
