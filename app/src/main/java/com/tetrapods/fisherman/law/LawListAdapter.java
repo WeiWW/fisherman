@@ -60,4 +60,5 @@ public class LawListAdapter extends RecyclerView.Adapter<ViewHolder> {
       dialog.show();
     }
   }
+
 }

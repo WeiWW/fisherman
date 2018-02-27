@@ -1,7 +1,5 @@
 package com.tetrapods.fisherman.record;
 
-
-
 import com.tetrapods.fisherman.BasePresenter;
 import com.tetrapods.fisherman.BaseView;
 
