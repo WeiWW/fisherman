@@ -4,7 +4,18 @@ apply plugin: 'jacoco-android'
 apply plugin: 'checkstyle'
 
 tasks.withType(Checkstyle) {
-    ignoreFailures = true
+    configFile file("${project.rootDir}/config/checkstyle/checkstyle.xml")
+    //configProperties.checkstyleSuppressionsPath = file("${project.rootDir}/code_quality/checkstyle/suppressions.xml").absolutePath
+
+    source 'src'
+    include '**/*.java'
+    exclude '**/gen/**'
+    exclude '**/MockFactory.java**'
+
+    ignoreFailures true
+    showViolations true
+
+    classpath = files()
     reports {
         html.enabled = true
     }
