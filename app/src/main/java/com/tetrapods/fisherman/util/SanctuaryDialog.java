@@ -12,7 +12,6 @@ import com.tetrapods.fisherman.R;
 import java.io.IOException;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class SanctuaryDialog extends Dialog {
@@ -27,7 +26,6 @@ public class SanctuaryDialog extends Dialog {
         super(context);
         this.context = context;
         setContentView(R.layout.sanctuary_dialog);
-        ButterKnife.bind(this);
         String str = context.getString(R.string.you_are_in_sanctuary, name);
         textView.setText(str);
     }

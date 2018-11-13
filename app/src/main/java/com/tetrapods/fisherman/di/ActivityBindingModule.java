@@ -1,18 +1,10 @@
 package com.tetrapods.fisherman.di;
 
 import com.tetrapods.fisherman.about.AboutModule;
-import com.tetrapods.fisherman.addedittask.AddEditTaskModule;
-import com.tetrapods.fisherman.addedittask.AddEditTaskActivity;
 import com.tetrapods.fisherman.law.LawModule;
 import com.tetrapods.fisherman.mappage.MapActivity;
 import com.tetrapods.fisherman.mappage.MapModule;
 import com.tetrapods.fisherman.record.RecordModule;
-import com.tetrapods.fisherman.statistics.StatisticsActivity;
-import com.tetrapods.fisherman.statistics.StatisticsModule;
-import com.tetrapods.fisherman.taskdetail.TaskDetailActivity;
-import com.tetrapods.fisherman.taskdetail.TaskDetailPresenterModule;
-import com.tetrapods.fisherman.tasks.TasksActivity;
-import com.tetrapods.fisherman.tasks.TasksModule;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
@@ -31,19 +23,4 @@ public abstract class ActivityBindingModule {
         AboutModule.class})
     abstract MapActivity mapActivity();
 
-    @ActivityScoped
-    @ContributesAndroidInjector(modules = TasksModule.class)
-    abstract TasksActivity tasksActivity();
-
-    @ActivityScoped
-    @ContributesAndroidInjector(modules = AddEditTaskModule.class)
-    abstract AddEditTaskActivity addEditTaskActivity();
-
-    @ActivityScoped
-    @ContributesAndroidInjector(modules = StatisticsModule.class)
-    abstract StatisticsActivity statisticsActivity();
-
-    @ActivityScoped
-    @ContributesAndroidInjector(modules = TaskDetailPresenterModule.class)
-    abstract TaskDetailActivity taskDetailActivity();
 }

@@ -44,7 +44,6 @@ import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static com.tetrapods.fisherman.TestUtils.getToolbarNavigationContentDescription;
-import static com.tetrapods.fisherman.custom.action.NavigationViewActions.navigateTo;
 import static junit.framework.Assert.fail;
 
 /**
@@ -164,8 +163,8 @@ public class AppNavigationTest {
                 .perform(open()); // Open Drawer
 
         // Start tasks list screen.
-        onView(withId(R.id.nav_view))
-                .perform(navigateTo(R.id.list_navigation_menu_item));
+//        onView(withId(R.id.nav_view))
+//                .perform(navigateTo(R.id.list_navigation_menu_item));
     }
 
     private void openStatisticsScreen() {
@@ -175,7 +174,7 @@ public class AppNavigationTest {
                 .perform(open()); // Open Drawer
 
         // Start statistics screen.
-        onView(withId(R.id.nav_view))
-                .perform(navigateTo(R.id.statistics_navigation_menu_item));
+//        onView(withId(R.id.nav_view))
+//                .perform(navigateTo(R.id.statistics_navigation_menu_item));
     }
 }
